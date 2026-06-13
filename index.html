@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombia 5.0 — Conferencias Digitales</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- BOTÓN DE IDIOMA -->
+  <div class="lang-switcher">
+    <button id="langBtn" onclick="toggleLanguage()" aria-label="Cambiar idioma">
+      <span id="langIcon">🌐</span>
+      <span id="langText">English</span>
+    </button>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="nav-logo-text" data-es="Colombia 5.0" data-en="Colombia 5.0">Colombia 5.0</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+      <li><a href="#sobre" data-es="Sobre el Evento" data-en="About the Event">Sobre el Evento</a></li>
+      <li><a href="#conferencia1" data-es="Animación K-Pop" data-en="K-Pop Animation">Animación K-Pop</a></li>
+      <li><a href="#conferencia2" data-es="IA & Spider-Man" data-en="AI & Spider-Man">IA & Spider-Man</a></li>
+      <li><a href="#glosario" data-es="Glosario" data-en="Glossary">Glosario</a></li>
+      <li><a href="#etica" data-es="Ética" data-en="Ethics">Ética</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO / PORTADA -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <img src="imagenes/fondo.png" alt="Colombia 5.0 entrada principal" class="hero-bg" />
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-es="Encuentro de Ecosistemas Digitales" data-en="Digital Ecosystems Summit">Encuentro de Ecosistemas Digitales</p>
+      <h1 class="hero-title">Colombia <span class="hero-accent">5.0</span></h1>
+      <p class="hero-subtitle" data-es="Tecnología · Animación · Inteligencia Artificial · Innovación" data-en="Technology · Animation · Artificial Intelligence · Innovation">Tecnología · Animación · Inteligencia Artificial · Innovación</p>
+      <div class="hero-badges">
+        <span class="badge" data-es="Bogotá, Colombia" data-en="Bogotá, Colombia">📍 Bogotá, Colombia</span>
+        <span class="badge" data-es="Corferias" data-en="Corferias">🏛 Corferias</span>
+        <span class="badge" data-es="Mayo 2026" data-en="May 2026">📅 Mayo 2026</span>
+      </div>
+      <a href="#sobre" class="hero-btn" data-es="Descubrir más" data-en="Discover more">Descubrir más ↓</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE EL EVENTO -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section-tag" data-es="El Evento" data-en="The Event">El Evento</div>
+      <h2 class="section-title" data-es="¿Qué es Colombia 5.0?" data-en="What is Colombia 5.0?">¿Qué es Colombia 5.0?</h2>
+      <div class="sobre-grid">
+        <div class="sobre-intro">
+          <p data-es="Colombia 5.0 es el gran encuentro nacional de ecosistemas digitales organizado por el Ministerio TIC de Colombia. Es un espacio donde gobierno, academia, empresas, emprendedores y ciudadanía se reúnen para construir juntos una sociedad digital más incluyente, creativa y conectada con las realidades del país." data-en="Colombia 5.0 is the national digital ecosystems summit organized by Colombia's Ministry of ICT. It is a space where government, academia, businesses, entrepreneurs and citizens come together to build a more inclusive, creative digital society.">
+            Colombia 5.0 es el gran encuentro nacional de ecosistemas digitales organizado por el Ministerio TIC de Colombia. Es un espacio donde gobierno, academia, empresas, emprendedores y ciudadanía se reúnen para construir juntos una sociedad digital más incluyente, creativa y conectada con las realidades del país.
+          </p>
+          <p data-es="Durante dos intensos días en Corferias, Bogotá, el evento reúne a más de 25.000 asistentes y cerca de 200 conferencistas nacionales e internacionales de más de 15 países, en torno a temas como inteligencia artificial, animación, videojuegos, marketing digital, salud digital y ciberseguridad." data-en="During two intense days at Corferias, Bogotá, the event brings together over 25,000 attendees and around 200 national and international speakers from more than 15 countries, around topics such as artificial intelligence, animation, video games, digital marketing, digital health and cybersecurity.">
+            Durante dos intensos días en Corferias, Bogotá, el evento reúne a más de 25.000 asistentes y cerca de 200 conferencistas nacionales e internacionales de más de 15 países, en torno a temas como inteligencia artificial, animación, videojuegos, marketing digital, salud digital y ciberseguridad.
+          </p>
+        </div>
+        <div class="sobre-objetivo">
+          <div class="objetivo-card">
+            <div class="objetivo-icon">🎯</div>
+            <h3 data-es="Objetivo" data-en="Objective">Objetivo</h3>
+            <p data-es="Posicionar a Colombia como actor clave en las industrias tecnológicas de la región, conectando los distintos actores del ecosistema digital para generar sinergias, compartir experiencias y abrir oportunidades de colaboración en un momento de acelerada digitalización. El evento busca también reducir la brecha digital, fomentar el talento local y presentar la Misión de Transformación Digital 2035 como hoja de ruta nacional." data-en="Position Colombia as a key player in the region's technology industries, connecting the different actors of the digital ecosystem to generate synergies, share experiences and open collaboration opportunities in a time of accelerated digitalization. The event also aims to reduce the digital divide, foster local talent and present the Digital Transformation Mission 2035 as a national roadmap.">
+              Posicionar a Colombia como actor clave en las industrias tecnológicas de la región, conectando los distintos actores del ecosistema digital para generar sinergias, compartir experiencias y abrir oportunidades de colaboración en un momento de acelerada digitalización. El evento busca también reducir la brecha digital, fomentar el talento local y presentar la Misión de Transformación Digital 2035 como hoja de ruta nacional.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num">+25.000</span>
+          <span class="stat-label" data-es="Asistentes" data-en="Attendees">Asistentes</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">~200</span>
+          <span class="stat-label" data-es="Conferencistas" data-en="Speakers">Conferencistas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">15+</span>
+          <span class="stat-label" data-es="Países" data-en="Countries">Países</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label" data-es="Días de innovación" data-en="Days of innovation">Días de innovación</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFERENCIA 1: ANIMACIÓN K-POP -->
+  <section class="section conferencia conf1" id="conferencia1">
+    <div class="conf-header conf1-header">
+      <div class="container">
+        <div class="section-tag light" data-es="Conferencia 1" data-en="Conference 1">Conferencia 1</div>
+        <h2 class="section-title light" data-es="Creando Efectos de Animación al Estilo K-Pop" data-en="Creating K-Pop Style Animation Effects">Creando Efectos de Animación al Estilo K-Pop</h2>
+        <div class="speaker-badge">
+          <div class="speaker-avatar">AFP</div>
+          <div class="speaker-info">
+            <span class="speaker-name">Andrés Felipe Pulido</span>
+            <span class="speaker-role" data-es="FX Artist & Artista de Animación 3D" data-en="FX Artist & 3D Animation Artist">FX Artist & Artista de Animación 3D</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container conf-body">
+      <div class="conf-main">
+        <div class="conf-info">
+          <div class="conf-tema">
+            <h3 data-es="Tema Principal" data-en="Main Topic">Tema Principal</h3>
+            <p data-es="Exploración del rol del FX Artist en la industria de animación y efectos visuales internacionales, con énfasis en cómo crear efectos digitales de partículas, fuego, humo, fluidos y simulaciones que dan vida a producciones de videoclips K-pop y películas de gran escala usando Houdini 3D." data-en="Exploration of the FX Artist's role in the international animation and visual effects industry, with emphasis on how to create digital particle, fire, smoke, fluid and simulation effects that bring K-pop music videos and large-scale film productions to life using Houdini 3D.">
+              Exploración del rol del FX Artist en la industria de animación y efectos visuales internacionales, con énfasis en cómo crear efectos digitales de partículas, fuego, humo, fluidos y simulaciones que dan vida a producciones de videoclips K-pop y películas de gran escala usando Houdini 3D.
+            </p>
+          </div>
+          <div class="conf-resumen">
+            <h3 data-es="Reflexión" data-en="Reflection">Reflexión</h3>
+            <blockquote data-es="Andrés Felipe Pulido demostró que el talento colombiano puede competir al más alto nivel en Hollywood y el mercado internacional de VFX. Su trayectoria desde la Universidad Nacional hasta trabajar en Sony Pictures Imageworks invita a los jóvenes a soñar en grande: la tecnología no tiene fronteras y la creatividad local puede transformarse en arte global." data-en="Andrés Felipe Pulido demonstrated that Colombian talent can compete at the highest level in Hollywood and the international VFX market. His journey from Universidad Nacional to working at Sony Pictures Imageworks invites young people to dream big: technology has no borders and local creativity can become global art.">
+              "Andrés Felipe Pulido demostró que el talento colombiano puede competir al más alto nivel en Hollywood y el mercado internacional de VFX. Su trayectoria desde la Universidad Nacional hasta trabajar en Sony Pictures Imageworks invita a los jóvenes a soñar en grande: la tecnología no tiene fronteras y la creatividad local puede transformarse en arte global."
+            </blockquote>
+          </div>
+          <div class="conf-keywords">
+            <h3 data-es="Palabras Clave" data-en="Key Words">Palabras Clave</h3>
+            <div class="keywords-list">
+              <span class="kw">FX Artist</span>
+              <span class="kw">Houdini 3D</span>
+              <span class="kw">VFX</span>
+              <span class="kw" data-es="Simulación de partículas" data-en="Particle simulation">Simulación de partículas</span>
+              <span class="kw">K-Pop</span>
+              <span class="kw" data-es="Efectos especiales" data-en="Special effects">Efectos especiales</span>
+              <span class="kw">Sony Pictures</span>
+              <span class="kw" data-es="Animación 3D" data-en="3D Animation">Animación 3D</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALERÍA CONF 1 -->
+        <div class="conf-gallery">
+          <h3 data-es="Galería de la Conferencia" data-en="Conference Gallery">Galería de la Conferencia</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item main-img" onclick="openLightbox('imagenes/imagen1.png')">
+              <img src="imagenes/imagen1.png" alt="Conferencia animación K-pop - efectos visuales" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen2.png')">
+              <img src="imagenes/imagen6.png" alt="Andrés Pulido - FX Artist en escena" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen3.png')">
+              <img src="imagenes/imagen3.png" alt="Películas y producciones del conferencista" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen4.png')">
+              <img src="imagenes/imagen4.png" alt="Instituciones y estudios colaboradores" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen5.png')">
+              <img src="imagenes/imagen5.png" alt="Vista del auditorio durante la conferencia" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO CONF 1 -->
+      <div class="conf-video">
+        <h3 data-es="Video de la Conferencia" data-en="Conference Video">Video de la Conferencia</h3>
+        <div class="video-wrapper">
+          <video controls preload="none" poster="imagenes/imagenvideo.png">
+            <source src="videos/video1.mp4" type="video/mp4" />
+            <p data-es="Tu navegador no soporta video HTML5." data-en="Your browser does not support HTML5 video.">Tu navegador no soporta video HTML5.</p>
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFERENCIA 2: IA Y SPIDERMAN -->
+  <section class="section conferencia conf2" id="conferencia2">
+    <div class="conf-header conf2-header">
+      <div class="container">
+        <div class="section-tag light" data-es="Conferencia 2" data-en="Conference 2">Conferencia 2</div>
+        <h2 class="section-title light" data-es="Spider-Man, Héroes y Villanos en el Mundo Digital con Inteligencia Artificial" data-en="Spider-Man, Heroes and Villains in the Digital World with Artificial Intelligence">Spider-Man, Héroes y Villanos en el Mundo Digital con Inteligencia Artificial</h2>
+        <div class="speaker-badge">
+          <div class="speaker-avatar">JR</div>
+          <div class="speaker-info">
+            <span class="speaker-name">Jair Ramírez</span>
+            <span class="speaker-role" data-es="Experto en Inteligencia Artificial & Futurista Digital" data-en="Artificial Intelligence Expert & Digital Futurist">Experto en Inteligencia Artificial & Futurista Digital</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container conf-body">
+      <div class="conf-main">
+        <div class="conf-info">
+          <div class="conf-tema">
+            <h3 data-es="Tema Principal" data-en="Main Topic">Tema Principal</h3>
+            <p data-es="Análisis profundo del impacto de la inteligencia artificial en la sociedad usando el universo de Spider-Man como metáfora: los 'héroes' que usan la IA para transformar la educación, la ciencia, la economía y la sociología, frente a los 'villanos' que la emplean para manipular, desinformar y concentrar poder. La conferencia plantea que la IA será una entidad no biológica con agencia propia y nos desafía a elegir de qué lado estar." data-en="Deep analysis of artificial intelligence's impact on society using the Spider-Man universe as a metaphor: the 'heroes' who use AI to transform education, science, economy and sociology, versus the 'villains' who use it to manipulate, misinform and concentrate power. The conference proposes that AI will be a non-biological entity with its own agency and challenges us to choose which side to be on.">
+              Análisis profundo del impacto de la inteligencia artificial en la sociedad usando el universo de Spider-Man como metáfora: los 'héroes' que usan la IA para transformar la educación, la ciencia, la economía y la sociología, frente a los 'villanos' que la emplean para manipular, desinformar y concentrar poder. La conferencia plantea que la IA será una entidad no biológica con agencia propia y nos desafía a elegir de qué lado estar.
+            </p>
+          </div>
+          <div class="conf-resumen">
+            <h3 data-es="Reflexión" data-en="Reflection">Reflexión</h3>
+            <blockquote data-es="Jair Ramírez nos recordó que con gran poder viene gran responsabilidad —la misma lección de Spider-Man—. La IA no es neutra: puede ser la herramienta que democratice el conocimiento o el mecanismo que profundice las desigualdades. Somos nosotros, como sociedad, quienes decidimos si seremos héroes o villanos en este nuevo mundo digital." data-en="Jair Ramírez reminded us that with great power comes great responsibility — the same lesson as Spider-Man. AI is not neutral: it can be the tool that democratizes knowledge or the mechanism that deepens inequalities. It is we, as a society, who decide whether we will be heroes or villains in this new digital world.">
+              "Jair Ramírez nos recordó que con gran poder viene gran responsabilidad —la misma lección de Spider-Man—. La IA no es neutra: puede ser la herramienta que democratice el conocimiento o el mecanismo que profundice las desigualdades. Somos nosotros, como sociedad, quienes decidimos si seremos héroes o villanos en este nuevo mundo digital."
+            </blockquote>
+          </div>
+          <div class="conf-keywords">
+            <h3 data-es="Palabras Clave" data-en="Key Words">Palabras Clave</h3>
+            <div class="keywords-list">
+              <span class="kw" data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</span>
+              <span class="kw">Spider-Man</span>
+              <span class="kw" data-es="Entidad no biológica" data-en="Non-biological entity">Entidad no biológica</span>
+              <span class="kw" data-es="Héroes digitales" data-en="Digital heroes">Héroes digitales</span>
+              <span class="kw" data-es="Automatización" data-en="Automation">Automatización</span>
+              <span class="kw" data-es="Ética digital" data-en="Digital ethics">Ética digital</span>
+              <span class="kw" data-es="Transformación social" data-en="Social transformation">Transformación social</span>
+              <span class="kw">CONIA.AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALERÍA CONF 2 -->
+        <div class="conf-gallery">
+          <h3 data-es="Galería de la Conferencia" data-en="Conference Gallery">Galería de la Conferencia</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item main-img" onclick="openLightbox('imagenes/imagen7.png')">
+              <img src="imagenes/imagen7.png" alt="Spider-Man IA - educación ciencia economía" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen8.png')">
+              <img src="imagenes/imagen8.png" alt="La IA será una entidad no biológica" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen9.png')">
+              <img src="imagenes/imagen9.png" alt="Jair Ramírez en escena Colombia 5.0" loading="lazy" />
+              <div class="gallery-overlay"><span></span></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('imagenes/imagen6.png')">
+  <img src="imagenes/imagen2.png" alt="Conferencista Jair Ramírez en el escenario" loading="lazy" />
+  <div class="gallery-overlay"><span></span></div>
+</div>
+
+<div class="gallery-item" onclick="openLightbox('imagenes/imagen10.png')">
+  <img src="imagenes/imagen10.png" alt="Conferencista Jair Ramírez en el escenario" loading="lazy" />
+  <div class="gallery-overlay"><span></span></div>
+       </div> 
+    </div>
+  </section>
+  </section>
+<!-- VIDEO CONF 2 -->
+<div class="conf-video">
+  <h3 data-es="Video de la Conferencia" data-en="Conference Video">
+    Video de la Conferencia
+  </h3>
+
+  <div class="video-wrapper">
+    <video controls preload="auto" poster="imagenes/imagenv.png">
+      <source src="videos/video2.mp4" type="video/mp4" />
+      <p>Tu navegador no soporta video HTML5.</p>
+    </video>
+  </div>
+</div>
+  <!-- GLOSARIO -->
+  <section class="section glosario-sec" id="glosario">
+    <div class="container">
+      <div class="section-tag" data-es="Vocabulario Técnico" data-en="Technical Vocabulary">Vocabulario Técnico</div>
+      <h2 class="section-title" data-es="Glosario de 30 Términos" data-en="Glossary of 30 Terms">Glosario de 30 Términos</h2>
+      <p class="section-desc" data-es="Conceptos clave de las conferencias en español e inglés con su definición." data-en="Key concepts from the conferences in Spanish and English with their definition.">Conceptos clave de las conferencias en español e inglés con su definición.</p>
+
+      <div class="glosario-filter">
+        <button class="filter-btn active" onclick="filterGlosario('all')" data-es="Todos" data-en="All">Todos</button>
+        <button class="filter-btn" onclick="filterGlosario('animacion')" data-es="Animación" data-en="Animation">Animación</button>
+        <button class="filter-btn" onclick="filterGlosario('ia')" data-es="Inteligencia Artificial" data-en="AI">Inteligencia Artificial</button>
+      </div>
+
+      <div class="glosario-grid" id="glosarioGrid">
+
+        <!-- ANIMACIÓN -->
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">01</div>
+          <div class="glosario-terms">
+            <span class="term-es">FX Artist</span>
+            <span class="term-en">FX Artist</span>
+          </div>
+          <p class="glosario-def" data-es="Artista especializado en crear efectos visuales digitales como fuego, humo, explosiones, fluidos y partículas en producciones audiovisuales." data-en="Artist specialized in creating digital visual effects such as fire, smoke, explosions, fluids and particles in audiovisual productions.">Artista especializado en crear efectos visuales digitales como fuego, humo, explosiones, fluidos y partículas en producciones audiovisuales.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">02</div>
+          <div class="glosario-terms">
+            <span class="term-es">Efectos Visuales</span>
+            <span class="term-en">Visual Effects (VFX)</span>
+          </div>
+          <p class="glosario-def" data-es="Técnicas y procesos para crear imágenes que no se pueden capturar fácilmente durante la grabación en vivo, generadas mediante software especializado." data-en="Techniques and processes for creating images that cannot be easily captured during live filming, generated through specialized software.">Técnicas y procesos para crear imágenes que no se pueden capturar fácilmente durante la grabación en vivo, generadas mediante software especializado.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">03</div>
+          <div class="glosario-terms">
+            <span class="term-es">Simulación de Partículas</span>
+            <span class="term-en">Particle Simulation</span>
+          </div>
+          <p class="glosario-def" data-es="Técnica de animación que modela el comportamiento de miles de objetos pequeños (partículas) para replicar fenómenos como chispas, lluvia, nieve o magia." data-en="Animation technique that models the behavior of thousands of small objects (particles) to replicate phenomena such as sparks, rain, snow or magic.">Técnica de animación que modela el comportamiento de miles de objetos pequeños (partículas) para replicar fenómenos como chispas, lluvia, nieve o magia.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">04</div>
+          <div class="glosario-terms">
+            <span class="term-es">Houdini 3D</span>
+            <span class="term-en">Houdini 3D</span>
+          </div>
+          <p class="glosario-def" data-es="Software de animación y efectos visuales procedurales de alto nivel utilizado en producciones de Hollywood para crear simulaciones complejas de fluidos, destrucción y partículas." data-en="High-level procedural animation and visual effects software used in Hollywood productions to create complex fluid, destruction and particle simulations.">Software de animación y efectos visuales procedurales de alto nivel utilizado en producciones de Hollywood para crear simulaciones complejas de fluidos, destrucción y partículas.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">05</div>
+          <div class="glosario-terms">
+            <span class="term-es">Renderizado</span>
+            <span class="term-en">Rendering</span>
+          </div>
+          <p class="glosario-def" data-es="Proceso computacional que convierte modelos 3D y datos de escena en imágenes 2D finales, calculando iluminación, texturas, sombras y efectos visuales." data-en="Computational process that converts 3D models and scene data into final 2D images, calculating lighting, textures, shadows and visual effects.">Proceso computacional que convierte modelos 3D y datos de escena en imágenes 2D finales, calculando iluminación, texturas, sombras y efectos visuales.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">06</div>
+          <div class="glosario-terms">
+            <span class="term-es">Simulación de Fluidos</span>
+            <span class="term-en">Fluid Simulation</span>
+          </div>
+          <p class="glosario-def" data-es="Recreación digital del comportamiento físico de líquidos y gases, como agua, lava o sangre, mediante ecuaciones matemáticas aplicadas en software 3D." data-en="Digital recreation of the physical behavior of liquids and gases, such as water, lava or blood, through mathematical equations applied in 3D software.">Recreación digital del comportamiento físico de líquidos y gases, como agua, lava o sangre, mediante ecuaciones matemáticas aplicadas en software 3D.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">07</div>
+          <div class="glosario-terms">
+            <span class="term-es">Dinámica de Cuerpos Rígidos</span>
+            <span class="term-en">Rigid Body Dynamics (RBD)</span>
+          </div>
+          <p class="glosario-def" data-es="Simulación del comportamiento de objetos sólidos que no se deforman al colisionar o destruirse, como paredes, rocas o escombros en explosiones digitales." data-en="Simulation of the behavior of solid objects that do not deform when colliding or being destroyed, such as walls, rocks or debris in digital explosions.">Simulación del comportamiento de objetos sólidos que no se deforman al colisionar o destruirse, como paredes, rocas o escombros en explosiones digitales.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">08</div>
+          <div class="glosario-terms">
+            <span class="term-es">Composición Digital</span>
+            <span class="term-en">Digital Compositing</span>
+          </div>
+          <p class="glosario-def" data-es="Proceso de combinar múltiples elementos visuales de diferentes fuentes —imágenes reales, CGI y efectos— en una sola imagen final coherente." data-en="Process of combining multiple visual elements from different sources — real images, CGI and effects — into a single coherent final image.">Proceso de combinar múltiples elementos visuales de diferentes fuentes —imágenes reales, CGI y efectos— en una sola imagen final coherente.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">09</div>
+          <div class="glosario-terms">
+            <span class="term-es">Animación Procedural</span>
+            <span class="term-en">Procedural Animation</span>
+          </div>
+          <p class="glosario-def" data-es="Método de generar animaciones automáticamente a través de algoritmos matemáticos y reglas de simulación, en lugar de animar manualmente cada fotograma." data-en="Method of automatically generating animations through mathematical algorithms and simulation rules, rather than manually animating each frame.">Método de generar animaciones automáticamente a través de algoritmos matemáticos y reglas de simulación, en lugar de animar manualmente cada fotograma.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">10</div>
+          <div class="glosario-terms">
+            <span class="term-es">K-Pop</span>
+            <span class="term-en">K-Pop (Korean Pop)</span>
+          </div>
+          <p class="glosario-def" data-es="Género musical de Corea del Sur caracterizado por su alta producción audiovisual, coreografías complejas y un uso intensivo de efectos visuales y animación digital en sus videoclips." data-en="South Korean musical genre characterized by its high audiovisual production, complex choreographies and intensive use of visual effects and digital animation in its music videos.">Género musical de Corea del Sur caracterizado por su alta producción audiovisual, coreografías complejas y un uso intensivo de efectos visuales y animación digital en sus videoclips.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">11</div>
+          <div class="glosario-terms">
+            <span class="term-es">Pipeline de Producción</span>
+            <span class="term-en">Production Pipeline</span>
+          </div>
+          <p class="glosario-def" data-es="Flujo de trabajo estructurado en una producción audiovisual que define las etapas, herramientas y responsabilidades desde el concepto hasta la entrega final del producto." data-en="Structured workflow in an audiovisual production that defines the stages, tools and responsibilities from concept to final product delivery.">Flujo de trabajo estructurado en una producción audiovisual que define las etapas, herramientas y responsabilidades desde el concepto hasta la entrega final del producto.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">12</div>
+          <div class="glosario-terms">
+            <span class="term-es">Imágenes Generadas por Computadora</span>
+            <span class="term-en">CGI (Computer-Generated Imagery)</span>
+          </div>
+          <p class="glosario-def" data-es="Arte visual creado mediante software de gráficos por computadora para producir imágenes estáticas o animadas usadas en cine, televisión, videojuegos y publicidad." data-en="Visual art created through computer graphics software to produce still or animated images used in film, television, video games and advertising.">Arte visual creado mediante software de gráficos por computadora para producir imágenes estáticas o animadas usadas en cine, televisión, videojuegos y publicidad.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">13</div>
+          <div class="glosario-terms">
+            <span class="term-es">Iluminación Volumétrica</span>
+            <span class="term-en">Volumetric Lighting</span>
+          </div>
+          <p class="glosario-def" data-es="Técnica de renderizado que simula cómo la luz interactúa con partículas en el aire —polvo, niebla, humo— para crear efectos de rayos de luz visibles y atmósfera." data-en="Rendering technique that simulates how light interacts with particles in the air — dust, fog, smoke — to create visible light ray effects and atmosphere.">Técnica de renderizado que simula cómo la luz interactúa con partículas en el aire —polvo, niebla, humo— para crear efectos de rayos de luz visibles y atmósfera.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">14</div>
+          <div class="glosario-terms">
+            <span class="term-es">Texturizado</span>
+            <span class="term-en">Texturing</span>
+          </div>
+          <p class="glosario-def" data-es="Proceso de aplicar imágenes o patrones digitales sobre modelos 3D para darles apariencia de materiales como piel, metal, madera, tela u otros acabados visuales." data-en="Process of applying digital images or patterns onto 3D models to give them the appearance of materials such as skin, metal, wood, fabric or other visual finishes.">Proceso de aplicar imágenes o patrones digitales sobre modelos 3D para darles apariencia de materiales como piel, metal, madera, tela u otros acabados visuales.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="animacion">
+          <div class="glosario-num">15</div>
+          <div class="glosario-terms">
+            <span class="term-es">Fotograma Clave</span>
+            <span class="term-en">Keyframe</span>
+          </div>
+          <p class="glosario-def" data-es="Punto específico en una línea de tiempo de animación que define los valores de posición, rotación o escala de un objeto, entre los cuales el software interpola el movimiento." data-en="Specific point on an animation timeline that defines the position, rotation or scale values of an object, between which the software interpolates movement.">Punto específico en una línea de tiempo de animación que define los valores de posición, rotación o escala de un objeto, entre los cuales el software interpola el movimiento.</p>
+        </div>
+
+        <!-- IA -->
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">16</div>
+          <div class="glosario-terms">
+            <span class="term-es">Inteligencia Artificial</span>
+            <span class="term-en">Artificial Intelligence (AI)</span>
+          </div>
+          <p class="glosario-def" data-es="Campo de la informática que desarrolla sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como razonar, aprender, reconocer patrones y tomar decisiones." data-en="Field of computer science that develops systems capable of performing tasks that normally require human intelligence, such as reasoning, learning, pattern recognition and decision-making.">Campo de la informática que desarrolla sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como razonar, aprender, reconocer patrones y tomar decisiones.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">17</div>
+          <div class="glosario-terms">
+            <span class="term-es">Aprendizaje Automático</span>
+            <span class="term-en">Machine Learning (ML)</span>
+          </div>
+          <p class="glosario-def" data-es="Subconjunto de la inteligencia artificial que permite a los sistemas aprender y mejorar automáticamente a partir de la experiencia y los datos sin ser programados explícitamente." data-en="Subset of artificial intelligence that enables systems to learn and automatically improve from experience and data without being explicitly programmed.">Subconjunto de la inteligencia artificial que permite a los sistemas aprender y mejorar automáticamente a partir de la experiencia y los datos sin ser programados explícitamente.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">18</div>
+          <div class="glosario-terms">
+            <span class="term-es">Aprendizaje Profundo</span>
+            <span class="term-en">Deep Learning</span>
+          </div>
+          <p class="glosario-def" data-es="Técnica de machine learning basada en redes neuronales artificiales con múltiples capas que permite a los sistemas reconocer patrones complejos en grandes volúmenes de datos." data-en="Machine learning technique based on artificial neural networks with multiple layers that allows systems to recognize complex patterns in large volumes of data.">Técnica de machine learning basada en redes neuronales artificiales con múltiples capas que permite a los sistemas reconocer patrones complejos en grandes volúmenes de datos.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">19</div>
+          <div class="glosario-terms">
+            <span class="term-es">Algoritmo</span>
+            <span class="term-en">Algorithm</span>
+          </div>
+          <p class="glosario-def" data-es="Conjunto finito de instrucciones o reglas bien definidas que, seguidas en orden, permiten resolver un problema o realizar una tarea computacional de forma sistemática." data-en="Finite set of well-defined instructions or rules that, followed in order, allow a problem to be solved or a computational task to be performed systematically.">Conjunto finito de instrucciones o reglas bien definidas que, seguidas en orden, permiten resolver un problema o realizar una tarea computacional de forma sistemática.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">20</div>
+          <div class="glosario-terms">
+            <span class="term-es">Red Neuronal</span>
+            <span class="term-en">Neural Network</span>
+          </div>
+          <p class="glosario-def" data-es="Modelo computacional inspirado en el cerebro humano, formado por nodos interconectados (neuronas artificiales) que procesan información para reconocer patrones y realizar predicciones." data-en="Computational model inspired by the human brain, formed by interconnected nodes (artificial neurons) that process information to recognize patterns and make predictions.">Modelo computacional inspirado en el cerebro humano, formado por nodos interconectados (neuronas artificiales) que procesan información para reconocer patrones y realizar predicciones.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">21</div>
+          <div class="glosario-terms">
+            <span class="term-es">Procesamiento del Lenguaje Natural</span>
+            <span class="term-en">Natural Language Processing (NLP)</span>
+          </div>
+          <p class="glosario-def" data-es="Rama de la IA que permite a las computadoras entender, interpretar y generar lenguaje humano de manera natural, usada en asistentes virtuales, traductores y chatbots." data-en="Branch of AI that enables computers to understand, interpret and generate human language naturally, used in virtual assistants, translators and chatbots.">Rama de la IA que permite a las computadoras entender, interpretar y generar lenguaje humano de manera natural, usada en asistentes virtuales, traductores y chatbots.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">22</div>
+          <div class="glosario-terms">
+            <span class="term-es">Automatización</span>
+            <span class="term-en">Automation</span>
+          </div>
+          <p class="glosario-def" data-es="Uso de tecnología para realizar tareas o procesos con mínima intervención humana, optimizando la eficiencia, reduciendo errores y liberando tiempo para actividades de mayor valor." data-en="Use of technology to perform tasks or processes with minimal human intervention, optimizing efficiency, reducing errors and freeing up time for higher-value activities.">Uso de tecnología para realizar tareas o procesos con mínima intervención humana, optimizando la eficiencia, reduciendo errores y liberando tiempo para actividades de mayor valor.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">23</div>
+          <div class="glosario-terms">
+            <span class="term-es">Agente de IA</span>
+            <span class="term-en">AI Agent</span>
+          </div>
+          <p class="glosario-def" data-es="Sistema de inteligencia artificial autónomo capaz de percibir su entorno, tomar decisiones y ejecutar acciones para alcanzar objetivos específicos sin supervisión humana continua." data-en="Autonomous artificial intelligence system capable of perceiving its environment, making decisions and executing actions to achieve specific objectives without continuous human supervision.">Sistema de inteligencia artificial autónomo capaz de percibir su entorno, tomar decisiones y ejecutar acciones para alcanzar objetivos específicos sin supervisión humana continua.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">24</div>
+          <div class="glosario-terms">
+            <span class="term-es">Brecha Digital</span>
+            <span class="term-en">Digital Divide</span>
+          </div>
+          <p class="glosario-def" data-es="Desigualdad en el acceso, uso y beneficio de las tecnologías de la información y comunicación entre diferentes grupos sociales, regiones geográficas o países." data-en="Inequality in access, use and benefit from information and communication technologies between different social groups, geographic regions or countries.">Desigualdad en el acceso, uso y beneficio de las tecnologías de la información y comunicación entre diferentes grupos sociales, regiones geográficas o países.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">25</div>
+          <div class="glosario-terms">
+            <span class="term-es">IA Generativa</span>
+            <span class="term-en">Generative AI</span>
+          </div>
+          <p class="glosario-def" data-es="Tipo de inteligencia artificial capaz de crear contenido nuevo —texto, imágenes, música, código— a partir de patrones aprendidos en grandes conjuntos de datos de entrenamiento." data-en="Type of artificial intelligence capable of creating new content — text, images, music, code — based on patterns learned from large training datasets.">Tipo de inteligencia artificial capaz de crear contenido nuevo —texto, imágenes, música, código— a partir de patrones aprendidos en grandes conjuntos de datos de entrenamiento.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">26</div>
+          <div class="glosario-terms">
+            <span class="term-es">Transformación Digital</span>
+            <span class="term-en">Digital Transformation</span>
+          </div>
+          <p class="glosario-def" data-es="Proceso de integración de tecnologías digitales en todas las áreas de una organización o sociedad, cambiando fundamentalmente cómo opera y entrega valor a las personas." data-en="Process of integrating digital technologies into all areas of an organization or society, fundamentally changing how it operates and delivers value to people.">Proceso de integración de tecnologías digitales en todas las áreas de una organización o sociedad, cambiando fundamentalmente cómo opera y entrega valor a las personas.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">27</div>
+          <div class="glosario-terms">
+            <span class="term-es">Metaverso</span>
+            <span class="term-en">Metaverse</span>
+          </div>
+          <p class="glosario-def" data-es="Espacio virtual compartido y persistente que combina realidad aumentada, realidad virtual e internet, donde los usuarios pueden interactuar, trabajar, crear y socializar mediante avatares digitales." data-en="Shared and persistent virtual space combining augmented reality, virtual reality and the internet, where users can interact, work, create and socialize through digital avatars.">Espacio virtual compartido y persistente que combina realidad aumentada, realidad virtual e internet, donde los usuarios pueden interactuar, trabajar, crear y socializar mediante avatares digitales.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">28</div>
+          <div class="glosario-terms">
+            <span class="term-es">Ética en IA</span>
+            <span class="term-en">AI Ethics</span>
+          </div>
+          <p class="glosario-def" data-es="Conjunto de principios y directrices morales que guían el desarrollo y uso responsable de la inteligencia artificial, abordando temas como la equidad, la privacidad, la transparencia y el impacto social." data-en="Set of moral principles and guidelines that guide the responsible development and use of artificial intelligence, addressing topics such as fairness, privacy, transparency and social impact.">Conjunto de principios y directrices morales que guían el desarrollo y uso responsable de la inteligencia artificial, abordando temas como la equidad, la privacidad, la transparencia y el impacto social.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">29</div>
+          <div class="glosario-terms">
+            <span class="term-es">Ciberseguridad</span>
+            <span class="term-en">Cybersecurity</span>
+          </div>
+          <p class="glosario-def" data-es="Práctica de proteger sistemas, redes y programas de ataques digitales que buscan acceder, modificar o destruir información sensible o interrumpir procesos tecnológicos." data-en="Practice of protecting systems, networks and programs from digital attacks that seek to access, modify or destroy sensitive information or disrupt technological processes.">Práctica de proteger sistemas, redes y programas de ataques digitales que buscan acceder, modificar o destruir información sensible o interrumpir procesos tecnológicos.</p>
+        </div>
+
+        <div class="glosario-card" data-cat="ia">
+          <div class="glosario-num">30</div>
+          <div class="glosario-terms">
+            <span class="term-es">Ecosistema Digital</span>
+            <span class="term-en">Digital Ecosystem</span>
+          </div>
+          <p class="glosario-def" data-es="Red interconectada de organizaciones, personas, tecnologías y recursos digitales que coexisten e interactúan creando valor conjunto en un entorno tecnológico en constante evolución." data-en="Interconnected network of organizations, people, technologies and digital resources that coexist and interact to create joint value in a constantly evolving technological environment.">Red interconectada de organizaciones, personas, tecnologías y recursos digitales que coexisten e interactúan creando valor conjunto en un entorno tecnológico en constante evolución.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTICA -->
+  <section class="section etica-sec" id="etica">
+    <div class="container">
+      <div class="section-tag" data-es="Reflexión Final" data-en="Final Reflection">Reflexión Final</div>
+      <h2 class="section-title" data-es="Pensamiento Ético y Tecnológico" data-en="Ethical and Technological Thinking">Pensamiento Ético y Tecnológico</h2>
+      <div class="etica-grid">
+
+        <div class="etica-card">
+          <div class="etica-icon">⚖️</div>
+          <h3 data-es="Responsabilidad Digital" data-en="Digital Responsibility">Responsabilidad Digital</h3>
+          <p data-es="La tecnología es una extensión de nuestros valores. Como recordó Jair Ramírez parafraseando a Spider-Man: con gran poder viene gran responsabilidad. Cada herramienta digital que creamos o usamos refleja nuestras decisiones éticas como sociedad." data-en="Technology is an extension of our values. As Jair Ramírez reminded us paraphrasing Spider-Man: with great power comes great responsibility. Every digital tool we create or use reflects our ethical decisions as a society.">La tecnología es una extensión de nuestros valores. Como recordó Jair Ramírez parafraseando a Spider-Man: con gran poder viene gran responsabilidad. Cada herramienta digital que creamos o usamos refleja nuestras decisiones éticas como sociedad.</p>
+        </div>
+
+        <div class="etica-card">
+          <div class="etica-icon">🌍</div>
+          <h3 data-es="Inclusión Tecnológica" data-en="Technological Inclusion">Inclusión Tecnológica</h3>
+          <p data-es="Colombia 5.0 pone sobre la mesa una pregunta urgente: ¿cómo garantizar que los beneficios de la IA y la animación digital lleguen a todos los rincones del país y no profundicen las desigualdades existentes? La innovación debe ser para todos." data-en="Colombia 5.0 raises an urgent question: how to ensure that the benefits of AI and digital animation reach every corner of the country and do not deepen existing inequalities? Innovation must be for everyone.">Colombia 5.0 pone sobre la mesa una pregunta urgente: ¿cómo garantizar que los beneficios de la IA y la animación digital lleguen a todos los rincones del país y no profundicen las desigualdades existentes? La innovación debe ser para todos.</p>
+        </div>
+
+        <div class="etica-card">
+          <div class="etica-icon">🎨</div>
+          <h3 data-es="Creatividad con Propósito" data-en="Creativity with Purpose">Creatividad con Propósito</h3>
+          <p data-es="La animación y los efectos visuales que mostró Andrés Felipe Pulido no son solo entretenimiento: son una industria que puede generar empleo creativo de alto valor en Colombia. Invertir en educación artística y tecnológica es invertir en el futuro del país." data-en="The animation and visual effects shown by Andrés Felipe Pulido are not just entertainment: they are an industry that can generate high-value creative employment in Colombia. Investing in artistic and technological education is investing in the country's future.">La animación y los efectos visuales que mostró Andrés Felipe Pulido no son solo entretenimiento: son una industria que puede generar empleo creativo de alto valor en Colombia. Invertir en educación artística y tecnológica es invertir en el futuro del país.</p>
+        </div>
+
+        <div class="etica-card">
+          <div class="etica-icon">🔬</div>
+          <h3 data-es="IA al Servicio Humano" data-en="AI at Human Service">IA al Servicio Humano</h3>
+          <p data-es="La inteligencia artificial no debe reemplazar lo humano sino potenciarlo. Los avances tecnológicos en ciencia, medicina, educación y economía deben estar orientados por principios éticos que protejan la dignidad, la privacidad y los derechos de todas las personas." data-en="Artificial intelligence should not replace the human but enhance it. Technological advances in science, medicine, education and economy must be guided by ethical principles that protect the dignity, privacy and rights of all people.">La inteligencia artificial no debe reemplazar lo humano sino potenciarlo. Los avances tecnológicos en ciencia, medicina, educación y economía deben estar orientados por principios éticos que protejan la dignidad, la privacidad y los derechos de todas las personas.</p>
+        </div>
+
+      </div>
+
+      <div class="etica-quote">
+        <p data-es="«La tecnología más poderosa no es la que nos hace más eficientes, sino la que nos hace más humanos.»" data-en="«The most powerful technology is not the one that makes us more efficient, but the one that makes us more human.»">«La tecnología más poderosa no es la que nos hace más eficientes, sino la que nos hace más humanos.»</p>
+        <span data-es="— Reflexión Colombia 5.0, 2026" data-en="— Colombia 5.0 Reflection, 2026">— Reflexión Colombia 5.0, 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="hero-accent">Colombia</span> 5.0
+        <p data-es="Encuentro de Ecosistemas Digitales · Ministerio TIC" data-en="Digital Ecosystems Summit · Ministry of ICT">Encuentro de Ecosistemas Digitales · Ministerio TIC</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="#conferencia1" data-es="Conferencia 1" data-en="Conference 1">Conferencia 1</a>
+        <a href="#conferencia2" data-es="Conferencia 2" data-en="Conference 2">Conferencia 2</a>
+        <a href="#glosario" data-es="Glosario" data-en="Glossary">Glosario</a>
+      </div>
+      <p class="footer-copy" data-es="© 2026 Colombia 5.0 ·fernanda zuluaga " data-en="© 2026 Colombia 5.0 · All rights reserved">© 2026 Colombia 5.0 · Fernanda zuluaga</p>
+    </div>
+  </foote>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Imagen ampliada" />
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
